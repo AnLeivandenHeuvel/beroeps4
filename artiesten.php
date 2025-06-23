@@ -16,7 +16,7 @@ $artiesten = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
     <nav>
-        <a href="index.php">home</a>
+        <a href="home.html">home</a>
         <a href="informatie.php">informatie</a>
         <a href="artiesten.php">artiesten</a>
         <a href="timetable.php">tijdschema</a>

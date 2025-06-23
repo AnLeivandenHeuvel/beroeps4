@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achtergrond Pagina</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+                  <a href="home.html">home</a>
+        <a href="informatie.php">informatie</a>
+        <a href="artiesten.php">artiesten</a>
+        <a href="timetable.php">tijdschema</a>
+        <a href="plattegrond.php">plattegrond</a>
+       <a href="bestellen.html">bestellen</a>
+        </ul>
+    </nav>
+
+    <div class="slideshow-container">
+        <div class="slides">
+            <div class="slide active">
+                <img src="img/home/img1.jpg" alt="Afbeelding 1">
+            </div>
+            <div class="slide">
+                <img src="img/home/img2.jpg" alt="Afbeelding 2">
+            </div>
+            <div class="slide">
+                <img src="img/home/img3.jpg" alt="Afbeelding 3">
+            </div>
+            <div class="slide">
+                <img src="img/home/img4.jpg" alt="Afbeelding 4">
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">❮</button>
+        <button class="next" onclick="changeSlide(1)">❯</button>
+    </div>
+
+    <div class="content-container">
+        <div class="text-content">
+            <p>Coachella is een van de grootste en bekendste muziekfestivals ter wereld en vindt elk jaar plaats in Indio, Californië. Het festival duurt twee weekenden in april en trekt honderdduizenden bezoekers van over de hele wereld. Coachella staat bekend om zijn diverse line-up van wereldberoemde artiesten uit genres zoals pop, hiphop, EDM, rock en indie. Naast muziek is er ook veel aandacht voor kunst, mode en beleving. Grote kunstinstallaties, opvallende festivaloutfits en influencers maken deel uit van de unieke sfeer. Coachella is meer dan alleen een muziekfestival: het is een cultureel fenomeen dat muziek, lifestyle en visuele expressie samenbrengt.</p>
+        </div>
+        <div class="image-content">
+            <img src="img/home/img5.jpg" alt="Coachella Festival">
+        </div>
+    </div>
+
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bHMxA5Ipcf0?si=2uwQe7hlismnFbWT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p><i class="fas fa-map-marker-alt"></i> Empire Polo Club, Indio, Californië</p>
+                <p><i class="fas fa-envelope"></i> info@coachella.com</p>
+                <p>© 2025 Goldenvoice</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://www.facebook.com/coachella" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/coachella" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/coachella" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://open.spotify.com/user/coachella" target="_blank"><i class="fab fa-spotify"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

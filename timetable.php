@@ -153,7 +153,7 @@ foreach ($week1_dagen as $dag) {
         <a href="artiesten.php" style="margin: 0 30px; text-decoration: none; color: #222; font-size: 1.3em; font-weight: 500;">artiesten</a>
         <a href="timetable.php" style="margin: 0 30px; text-decoration: none; color: #222; font-size: 1.3em; font-weight: 500;">tijdschema</a>
         <a href="plattegrond.php" style="margin: 0 30px; text-decoration: none; color: #222; font-size: 1.3em; font-weight: 500;">plattegrond</a>
-        <a href="bestellen.php" style="margin: 0 30px; text-decoration: none; color: #222; font-size: 1.3em; font-weight: 500;">bestellen</a>
+        <a href="bestellen.html" style="margin: 0 30px; text-decoration: none; color: #222; font-size: 1.3em; font-weight: 500;">bestellen</a>
     </nav>
     <h1 class="timetable-title">Tijdschema</h1>
     <div class="timetable-date">
