@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        180deg,
+        #ffe08a 0%,
+        #b6cfae 30%,
+        #7ec8c9 50%,
+        #e48c8c 100%
+    );
+}
+nav {
+    background: #ffe08a;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+nav a {
+    margin: 0 30px;
+    text-decoration: none;
+    color: #222;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 30px;
+}
+.artiesten-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-content: center;
+    margin: 40px 0 0 0;
+}
+
+@media (max-width: 700px) {
+    .artiesten-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.artiest-card {
+    background: url('img/Group9.png') center/cover no-repeat, linear-gradient(120deg, #ffe08a 60%, #7ec8c9 100%);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    width: 320px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+.artiest-card.hidden {
+    display: none;
+}
+.artiest-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #fff;
+}
+.artiest-info {
+    flex: 1;
+}
+.artiest-info h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.3em;
+}
+.artiest-info p {
+    margin: 0;
+    font-size: 1em;
+}
+.footer {
+    background: #f48c8c;
+    padding: 30px 0 10px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+.footer-icons {
+    margin-top: 10px;
+}
+.footer-icons img {
+    width: 36px;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+.view-more {
+    display: block;
+    margin: 40px auto 0 auto;
+    padding: 12px 32px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+    font-weight: bold;
+} 

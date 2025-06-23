@@ -1,0 +1,48 @@
+artiesten;;;;
+kolomnaam;type;null;auto increment;omschrijving
+id;INT;not null;yes;unieke identificatie van artiest
+naam;TEKST;not null;no;naam van de artiest of band
+genre;TEKST;null;no;muziekgenre van de artiest
+foto;img;not null;no;een foto van de artiest
+Podia;;;;
+kolomnaam;type;null;auto increment;omschrijving
+id;INT;not null;yes;unieke identificatie van het podium
+naam;TEKST;not null;no;naam van het podium
+locatie;TEKST;null;no;locatieomschrijving op het terrein
+;;;;
+optreden;;;;
+kolomnaam;type;null;auto increment;omschrijving
+id;INT;not null;yes;unieke identificatie van artiest
+begin-tijd;Datetime;not null;NO;de tijd dat de artiest op de podium is 
+eind-tijd;Datetime;not null;NO;de tijd dat de artiest klaar is met optreden 
+podium_id;INT;Not null;NO;Verwijzing naar het podium
+artiest_id;INT;Not null;NO;Verwijzing naar de artiest
+festival_id;INT;not null;NO;verwijzing naar het festival 
+;;;;
+ tickets ;;;;
+kolomnaam;type;null;auto increment;omschrijving
+id;INT;not null;yes;unieke identificatie van de ticketgroep
+vip;INT;not null;no;aantal beschikbare VIP-tickets
+dagticket;INT;not null;no;aantal beschikbare dagtickets
+weekendticket;INT;not null;no;aantal beschikbare weekendtickets
+geldig_vanaf;Datetime;not null;no;startdatum van geldigheid
+geldig_tot;Datetime;not null;no;einddatum van geldigheid
+;;;;
+tickets bestel;;;;
+kolomnaam;type;null;auto increment;omschrijving
+id;INT;not null;yes;unieke identificatie van de bestelling
+ticket_id;INT;not null;no;verwijzing naar de tickets tabel
+klant_id;INT;not null;no;verwijzing naar de klant die de bestelling heeft geplaatst
+aantal_vip;INT;not null;no;aantal VIP-tickets besteld
+aantal_dagticket;INT;not null;no;aantal dagtickets besteld
+aantal_weekend;INT;not null;no;aantal weekendtickets besteld
+besteld_op;Datetime;not null;no;datum en tijd van de bestelling
+;;;;
+festival;;;;
+kolomnaam;type;null;auto increment;omschrijving
+ID;INT;not null;yes ;Unieke ID voor het festival
+naam;TEXT;not null;no;Naam van het festival
+locatie;TEXT;not null;no;Adres/locatie van het festival
+datum_start;Datetime;not null;no;Startdatum van het festival
+datum_eind;Datetime;not null;no;Einddatum van het festival
+beschrijving;TEXT;null;no;Algemene omschrijving van het festival
